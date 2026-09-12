@@ -1,34 +1,88 @@
-# Gradle files
+# ==========================================
+# Gradle & Kotlin Tooling
+# ==========================================
 .gradle/
 build/
+**/build/
+.kotlin/
 
-# Local configuration file (sdk path, etc)
+# Local configuration file (SDK path, etc.)
 local.properties
 
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
+# ==========================================
+# Android Studio & IntelliJ IDEA
+# ==========================================
+*.iml
+.idea/
+.navigation/
 captures/
 .externalNativeBuild/
 .cxx/
-*.aab
-*.apk
 output-metadata.json
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# VS Code & Other Editors
+.vscode/
+*.ipr
+*.iws
 
-# Keystore files
+# ==========================================
+# Built Outputs & Binaries
+# ==========================================
+*.apk
+*.aar
+*.aab
+*.apks
+*.dex
+*.class
+
+# Proguard / R8 mapping
+mapping.txt
+
+# ==========================================
+# Keystore, Credentials & Secrets (Security)
+# ==========================================
 *.jks
 *.keystore
+*.pepk
+*.p12
+*.pem
+*.key
+key.properties
+keystore.properties
+secrets.properties
+.env
+.env.*
 
-# Google Services (e.g. APIs or Firebase)
+# Google Services / Service Accounts
 google-services.json
+*service-account*.json
 
-# Android Profiling
+# ==========================================
+# Profiling & Logs
+# ==========================================
+*.log
 *.hprof
+*.trace
+
+# ==========================================
+# OS Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux / Temporary
+*~
+*.swp
+*.swo
